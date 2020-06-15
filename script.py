@@ -317,8 +317,8 @@ def run(filename):
                 frame = "0" + str(frame)
             else:
                 frame = str(frame)
-            save_extension(screen, "anim/" + name + frame + ".png")
-            # save_ppm(screen, "anim/" + name + str(frame) + ".ppm")
+            # save_extension(screen, "anim/" + name + frame + ".png")
+            save_ppm(screen, "anim/" + name + str(frame) + ".ppm")
             clear_screen(screen)
             clear_zbuffer(zbuffer)
             frame = int(frame) +1
